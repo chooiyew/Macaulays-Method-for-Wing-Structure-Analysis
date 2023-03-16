@@ -22,11 +22,11 @@ $\rho$ is density for air 1.225 kg/m3
 
 $V$ is speed (0 km/h to 750 km/h)
 
-$CL$ is lift coefficient depend on attack angle (𝐶𝐿 = 0.09𝛼 + 0.4)
+$CL$ is lift coefficient depend on attack angle ($CL$ = 0.09$\alpha$ + 0.4)
 
-$\alpla$ is attack angle (0 deg to 15 deg)
+$\alpha$ is attack angle (0 deg to 15 deg)
 
-$x$ is distance from body
+$x$ is the distance from body
 
 <a name="figure4"></a> ![Figure4](Figure4.png)
 
