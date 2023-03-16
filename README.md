@@ -24,10 +24,19 @@ Where,
 𝛼 is attack angle (0 deg to 15 deg)
 𝑥 is distance from body
 
+<a name="figure4"></a> ![Figure4](Figure4.png)
 
 --- 
 ## Program's objectives
-
+* a)  To determine the cross section of the beam if the maximum deflection of the wing must not larger than 0.5 meter.
+* b) To calculate the location and at what condition happen the maximum transverse stress
+* c) To calculate the location and at what condition happen the maximum bending stress
+* d) To plot the 2D graph maximum shear force verse speed for the angle of attack 0 deg., 10 deg. and 15 deg. in same graph.
+* e) To plot the 2D graph maximum bending moment verse speed for the angle of attack 0 deg., 10 deg. and 15 deg. in same graph.
+* f) To plot the 2D graph deflection verse speed for the angle of attack 0 deg., 10 deg. and 15 deg. in same graph.
+* g) To plot the 3D graph for shear force with the step size for speed 50km/h and step size for angle attack 1 deg.
+* h) To plot the 3D graph for bending moment with the step size for speed 50km/h and step size for angle attack 1 deg.
+* i) To plot the 3D graph for deflection with the step size for speed 50km/h and step size for angle attack 1 deg.
 
 --- 
 ## Solution proposed
