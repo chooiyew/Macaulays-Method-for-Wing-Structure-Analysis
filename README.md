@@ -15,14 +15,14 @@ Given the dry weight for the Turbine is 1950kg, and the uniform distribution wei
 
 Let assume the lift force acting on the wing as in [[Figure 4](#figure4)], and then the distribution lift force can be calculated in the equation below.
 
-$$ eqn 1 $$
+$$ w_L = - \dfrac{2}{17}\rho x V^2 C_L + 2.55 \rho V^2 C_L  $$
 
 Where,
 $\rho$ is density for air 1.225 kg/m3
 
 $V$ is speed (0 km/h to 750 km/h)
 
-$CL$ is lift coefficient depend on attack angle ($CL$ = 0.09$\alpha$ + 0.4)
+$CL$ is lift coefficient depend on attack angle ($CL$ = 0.09 $\alpha$ + 0.4)
 
 $\alpha$ is attack angle (0 deg to 15 deg)
 
@@ -33,8 +33,8 @@ $x$ is the distance from body
 --- 
 ## Program's objectives
 * a)  To determine the cross section of the beam if the maximum deflection of the wing must not larger than 0.5 meter.
-* b) To calculate the location and at what condition happen the maximum transverse stress
-* c) To calculate the location and at what condition happen the maximum bending stress
+* b) To calculate the location and at what condition happen the maximum transverse stress.
+* c) To calculate the location and at what condition happen the maximum bending stress.
 * d) To plot the 2D graph maximum shear force verse speed for the angle of attack 0 deg., 10 deg. and 15 deg. in same graph.
 * e) To plot the 2D graph maximum bending moment verse speed for the angle of attack 0 deg., 10 deg. and 15 deg. in same graph.
 * f) To plot the 2D graph deflection verse speed for the angle of attack 0 deg., 10 deg. and 15 deg. in same graph.
