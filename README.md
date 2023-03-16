@@ -1,0 +1,1 @@
+# Macaulays-Method-for-Wing-Structure-Analysis
