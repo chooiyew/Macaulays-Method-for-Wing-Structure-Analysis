@@ -13,16 +13,20 @@ Given the dry weight for the Turbine is 1950kg, and the uniform distribution wei
 
 <a name="figure3"></a> ![Figure3](Figure3.png)
 
-Let assume the lift force acting on the wing as in Figure 4, and then the distribution lift force can be calculated in the equation below.
+Let assume the lift force acting on the wing as in [[Figure 4](#figure4)], and then the distribution lift force can be calculated in the equation below.
 
 $$ eqn 1 $$
 
 Where,
-𝜌 is density for air 1.225 kg/m3
-𝑉 is speed (0 km/h to 750 km/h)
-𝐶𝐿 is lift coefficient depend on attack angle (𝐶𝐿 = 0.09𝛼 + 0.4)
-𝛼 is attack angle (0 deg to 15 deg)
-𝑥 is distance from body
+$\rho$ is density for air 1.225 kg/m3
+
+$V$ is speed (0 km/h to 750 km/h)
+
+$CL$ is lift coefficient depend on attack angle (𝐶𝐿 = 0.09𝛼 + 0.4)
+
+$\alpla$ is attack angle (0 deg to 15 deg)
+
+$x$ is distance from body
 
 <a name="figure4"></a> ![Figure4](Figure4.png)
 
