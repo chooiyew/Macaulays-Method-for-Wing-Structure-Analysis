@@ -1,6 +1,6 @@
 # Macaulays-Method-for-Wing-Structure-Analysis
 
-This MATLAB program solves multiple complex loading conditions on aircraft wing by assuming the wing is made out of two Euler-Bernoulli beams with square cross section.
+This MATLAB program solves multiple complex loading conditions on aircraft wing by assuming the wing is made out of two Euler-Bernoulli beams with square cross section. This description includes the [scenario given](#scenario-given), [program's objective](#programs-objectives), [proposed solution](#solution-proposed), [results](#results) from MATLAB and lastly a [table of content](#table-of-content) explaining each file in this repository.
 
 --- 
 ## Scenario given
@@ -171,5 +171,13 @@ The following is the result from MATLAB program attached.
 
 --- 
 ## Table of content
-
+| File                                       | Description                                    |
+|:------------------------------------------:|:----------------------------------------------:|
+| [Macaulays_method.m](/Macaulays_method.m/) | MATLAB program solving the scenario explained  |
+| [Figure1.png](/Figure1.png/)               | Aircraft orthographic drawing                  |
+| [Figure2.png](/Figure2.png/)               | Beam arrangement of wing                       |
+| [Figure3.png](/Figure3.png/)               | Distribution of fuel weight along the wing     |
+| [Figure4.png](/Figure4.png/)               | Projected area of the wing                     |
+| [Figure5.png](/Figure5.png/)               | Free body diagram of load distribution on wing |
+| [Figure6.png](/Figure6.png/)               | Macaulay's method on the free body diagram     |
 
