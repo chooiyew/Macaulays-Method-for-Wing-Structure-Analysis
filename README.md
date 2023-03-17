@@ -80,7 +80,9 @@ After that, Macaulay equation can be constructed according to the free body diag
 
 $\sum M_{X-X}=EI\frac{dy^2}{dx^2}$, (clockwise positive)
 
-$$ EI\frac{dy^2}{dx^2}=-\left(\frac{1}{2}\right)\left(15.2\right)\left(9.81\right)<x>^2-\left(\frac{1}{2}\right)\left(135\right)\left(9.81\right)<x>^2 -\left(1950\right)\left(9.81\right)<x-3>+M<x>^0+R<x>+\frac{\left(7.42\right)\left(9.81\right)}{\left(6\right)\left(15.3\right)}<x>^3 +(1/2)(2.55)(1.225)\ v^2\ C_L<x>^2-(2/17)(1.225)\ v^2\ C_L\ \ (<x>^3)/6$$
+```math
+ EI\frac{dy^2}{dx^2}=-\left(\frac{1}{2}\right)\left(15.2\right)\left(9.81\right)<x>^2-\left(\frac{1}{2}\right)\left(135\right)\left(9.81\right)<x>^2 -\left(1950\right)\left(9.81\right)<x-3>+M<x>^0+R<x>+\frac{\left(7.42\right)\left(9.81\right)}{\left(6\right)\left(15.3\right)}<x>^3 +(1/2)(2.55)(1.225)\ v^2\ C_L<x>^2-(2/17)(1.225)\ v^2\ C_L\ \ (<x>^3)/6
+ ```
 
 Integrate the equation above, we get
 
