@@ -80,11 +80,13 @@ After that, Macaulay equation can be constructed according to the free body diag
 
 $\sum M_{X-X}=EI\frac{dy^2}{dx^2}$, (clockwise positive)
 
+We get
 $$EI\frac{dy^2}{dx^2}=-\left(\frac{1}{2}\right)\left(15.2\right)\left(9.81\right)x^2-\left(\frac{1}{2}\right)\left(135\right)\left(9.81\right)x^2 -\left(1950\right)\left(9.81\right)(x-3)+Mx^0+Rx+\frac{\left(7.42\right)\left(9.81\right)}{\left(6\right)\left(15.3\right)}x^3 +(1/2)(2.55)(1.225)\ v^2\ C_L x^2-(2/17)(1.225)\ v^2\ C_L\ \ (x^3)/6 $$
 
 
-Integrate the equation above, we get
+Integrate the equation above
 
+We get
 $$ EI\frac{dy}{dx}=-\left(\frac{1}{6}\right)\left(15.2\right)\left(9.81\right)x^3-\left(\frac{1}{6}\right)\left(135\right)\left(9.81\right)x^3 -\left(\frac{1}{2}\right)\left(1950\right)\left(9.81\right)(x-3)^2+Mx^1+\frac{R}{2}x^2+\frac{\left(7.42\right)\left(9.81\right)}{\left(24\right)\left(15.3\right)}x^4 +\left(\frac{1}{6}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^3-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^4}{24}+C $$
 
 
@@ -110,7 +112,48 @@ Therefore, our final deflection equation is as follow :
 
 $$ EI\delta=-\left(\frac{1}{24}\right)\left(15.2\right)\left(9.81\right)x^4-\left(\frac{1}{24}\right)\left(135\right)\left(9.81\right)x^4 -\left(\frac{1}{6}\right)\left(1950\right)\left(9.81\right)(x-3)^3+\frac{M}{2}x^2+\frac{R}{6}x^3+\frac{\left(7.42\right)\left(9.81\right)}{\left(120\right)\left(15.3\right)}x^5 +\left(\frac{1}{24}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^4-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^5}{120} $$
 
+To ease the coding process, the equation above will be split into few small and simple parts by using superposition theory.
 
+- Fuel weight component = $-(1/24)(15.2)(9.81)x^4+(7.42)(9.81)/(120)(15.3)\ x^5$
+- Turbine component = $-\left(\frac{1}{6}\right)\left(1950\right)\left(9.81\right)(x-3)^3$
+- Wing weight component = $-\left(\frac{1}{24}\right)\left(135\right)\left(9.81\right)x^4$
+- Lift force component = $+\left(\frac{1}{24}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^4-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^5}{120}$
+- Moment at support = $+\frac{M}{2}x^2$
+- Reaction at support = $+\frac{R}{6}x^3$
+
+The varying variable in the deflection equation is x, a looping is then made to evaluate the deflection at x=0 to x=15.3. this looping should be within the looping for speed and angle of attack as those will affect the value of R and M for every loop.
+
+To determine the cross-section of the beam with a maximum deflection of 0.5m, we need to calculate the value of area moment of inertia, I.
+
+$$ I=\frac{1}{(25\ast{10}^9)(0.5)}[-\left(\frac{1}{24}\right)\left(15.2\right)\left(9.81\right)x^4-\left(\frac{1}{24}\right)\left(135\right)\left(9.81\right)x^4 -\left(\frac{1}{6}\right)\left(1950\right)\left(9.81\right)(x-3)^3+\frac{M}{2}x^2+\frac{R}{6}x^3+\frac{\left(7.42\right)\left(9.81\right)}{\left(120\right)\left(15.3\right)}x^5 +\left(\frac{1}{24}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^4-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^5}{120}] $$
+
+To get the I for a single beam, we divide the I by 2,
+
+$$ I_{single}=\frac{I}{2} $$
+
+To calculate the cross-sectional area, we apply the formula of area moment of inertia
+
+$$ \frac{1}{12}t^4=I_{single} $$
+
+The cross-sectional area, $A = t^2 m2$
+
+To determine the location of  position and location of maximum transverse stress and maximum bending stress, the equations of both stresses must be studied.
+
+Transverse stress = $\frac{VQ}{IT}$ and bending stress = $\frac{Mc}{I}$
+
+Where
+- $V$ = Shear force
+- $Q$ = First moment of area 
+- $I$ = Second moment of area
+- $T$ = Thickness of the cross-section
+- $M$ = Bending moment
+- $c$ = Radius of interest
+
+From the two equations above, we can conclude that the first moment of area, second moment of area, thickness of the cross-section and the radius of interest is fixed along the beam. The only differentiating factor in both cases is the shear force and the bending moment. Thus, to determine the maximum transverse stress and maximum bending stress, we need to consider only the maximum shear force and maximum bending moment.
+
+Since the values of force and bending moment is stored in 3D arrays, we can simply quote the location of the maximum values by MATLAB command of “ind2sub”. It will return the position of the maximum value in 3 single variables for row, column and page.
+
+To plot graphs in MATLAB, commands like “plot(x,y)” and “surfc(x,y,z)” are used. The size of the array in x,y and z axis must be equal to each other. Commands like “meshgrid”, “xlabel”, “ylabel”, “zlabel”, “title” are also used to provide a better visual representation of the graphs.
 
 
 --- 
