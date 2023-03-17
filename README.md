@@ -85,7 +85,6 @@ $$EI\frac{dy^2}{dx^2}=-\left(\frac{1}{2}\right)\left(15.2\right)\left(9.81\right
 
 ###
 Integrate the equation above
-
 $$ EI\frac{dy}{dx}=-\left(\frac{1}{6}\right)\left(15.2\right)\left(9.81\right)x^3-\left(\frac{1}{6}\right)\left(135\right)\left(9.81\right)x^3 -\left(\frac{1}{2}\right)\left(1950\right)\left(9.81\right)(x-3)^2+Mx^1+\frac{R}{2}x^2+\frac{\left(7.42\right)\left(9.81\right)}{\left(24\right)\left(15.3\right)}x^4 +\left(\frac{1}{6}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^3-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^4}{24}+C $$
 
 
