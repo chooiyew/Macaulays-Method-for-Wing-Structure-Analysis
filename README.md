@@ -85,12 +85,13 @@ $$EI\frac{dy^2}{dx^2}=-\left(\frac{1}{2}\right)\left(15.2\right)\left(9.81\right
 
 ###
 Integrate the equation above
-$$ EI\frac{dy}{dx}=-\left(\frac{1}{6}\right)\left(15.2\right)\left(9.81\right)x^3-\left(\frac{1}{6}\right)\left(135\right)\left(9.81\right)x^3 -\left(\frac{1}{2}\right)\left(1950\right)\left(9.81\right)(x-3)^2+Mx^1+\frac{R}{2}x^2+\frac{\left(7.42\right)\left(9.81\right)}{\left(24\right)\left(15.3\right)}x^4 +\left(\frac{1}{6}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^3-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^4}{24}+C $$
+
+$$EI\frac{dy}{dx}=-\left(\frac{1}{6}\right)\left(15.2\right)\left(9.81\right)x^3-\left(\frac{1}{6}\right)\left(135\right)\left(9.81\right)x^3 -\left(\frac{1}{2}\right)\left(1950\right)\left(9.81\right)(x-3)^2+Mx^1+\frac{R}{2}x^2+\frac{\left(7.42\right)\left(9.81\right)}{\left(24\right)\left(15.3\right)}x^4 +\left(\frac{1}{6}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^3-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^4}{24}+C$$
 
 
 Above is the slope equation, to fulfil the requirements of this project, we need the deflection equation where the slope equation will be integrated again.
 
-$$ EI\delta=-\left(\frac{1}{24}\right)\left(15.2\right)\left(9.81\right)x^4-\left(\frac{1}{24}\right)\left(135\right)\left(9.81\right)x^4 -\left(\frac{1}{6}\right)\left(1950\right)\left(9.81\right)(x-3)^3+\frac{M}{2}x^2+\frac{R}{6}x^3+\frac{\left(7.42\right)\left(9.81\right)}{\left(120\right)\left(15.3\right)}x^5 +\left(\frac{1}{24}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^4-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^5}{120}+Cx+D $$
+$$EI\delta=-\left(\frac{1}{24}\right)\left(15.2\right)\left(9.81\right)x^4-\left(\frac{1}{24}\right)\left(135\right)\left(9.81\right)x^4 -\left(\frac{1}{6}\right)\left(1950\right)\left(9.81\right)(x-3)^3+\frac{M}{2}x^2+\frac{R}{6}x^3+\frac{\left(7.42\right)\left(9.81\right)}{\left(120\right)\left(15.3\right)}x^5 +\left(\frac{1}{24}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^4-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^5}{120}+Cx+D$$
 
 
 Above is the deflection that we desire. However, before we code the equation into MATLAB, we have to solve for the unknows C and D.
@@ -108,7 +109,7 @@ $$ \bigmD=0 $$
 
 Therefore, our final deflection equation is as follow :
 
-$$ EI\delta=-\left(\frac{1}{24}\right)\left(15.2\right)\left(9.81\right)x^4-\left(\frac{1}{24}\right)\left(135\right)\left(9.81\right)x^4 -\left(\frac{1}{6}\right)\left(1950\right)\left(9.81\right)(x-3)^3+\frac{M}{2}x^2+\frac{R}{6}x^3+\frac{\left(7.42\right)\left(9.81\right)}{\left(120\right)\left(15.3\right)}x^5 +\left(\frac{1}{24}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^4-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^5}{120} $$
+$$EI\delta=-\left(\frac{1}{24}\right)\left(15.2\right)\left(9.81\right)x^4-\left(\frac{1}{24}\right)\left(135\right)\left(9.81\right)x^4 -\left(\frac{1}{6}\right)\left(1950\right)\left(9.81\right)(x-3)^3+\frac{M}{2}x^2+\frac{R}{6}x^3+\frac{\left(7.42\right)\left(9.81\right)}{\left(120\right)\left(15.3\right)}x^5 +\left(\frac{1}{24}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^4-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^5}{120}$$
 
 To ease the coding process, the equation above will be split into few small and simple parts by using superposition theory.
 
@@ -123,7 +124,7 @@ The varying variable in the deflection equation is x, a looping is then made to 
 
 To determine the cross-section of the beam with a maximum deflection of 0.5m, we need to calculate the value of area moment of inertia, I.
 
-$$ I=\frac{1}{(25\ast{10}^9)(0.5)}[-\left(\frac{1}{24}\right)\left(15.2\right)\left(9.81\right)x^4-\left(\frac{1}{24}\right)\left(135\right)\left(9.81\right)x^4 -\left(\frac{1}{6}\right)\left(1950\right)\left(9.81\right)(x-3)^3+\frac{M}{2}x^2+\frac{R}{6}x^3+\frac{\left(7.42\right)\left(9.81\right)}{\left(120\right)\left(15.3\right)}x^5 +\left(\frac{1}{24}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^4-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^5}{120}] $$
+$$I=\frac{1}{(25\ast{10}^9)(0.5)}[-\left(\frac{1}{24}\right)\left(15.2\right)\left(9.81\right)x^4-\left(\frac{1}{24}\right)\left(135\right)\left(9.81\right)x^4 -\left(\frac{1}{6}\right)\left(1950\right)\left(9.81\right)(x-3)^3+\frac{M}{2}x^2+\frac{R}{6}x^3+\frac{\left(7.42\right)\left(9.81\right)}{\left(120\right)\left(15.3\right)}x^5 +\left(\frac{1}{24}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^4-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^5}{120}]$$
 
 To get the I for a single beam, we divide the I by 2,
 
