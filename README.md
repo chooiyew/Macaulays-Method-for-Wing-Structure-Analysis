@@ -76,7 +76,7 @@ In both the equations above, note that there are two unknowns, the speed of the 
 
 After that, Macaulay equation can be constructed according to the free body diagram as shown in [[Figure 6](#figure6)] below :
 
-<a name="figure6"></a> ![Figure6](Figure6.png)
+
 
 
 
