@@ -62,6 +62,22 @@ Where
 - $\alpha$ = angle of attack (0-15 deg.)
 - $x$ = distance from body
 
+By applying $\sum{M_o=0}$ , (clockwise positive)
+
+We get
+$$0=M+\frac{\left(135\right)\left(9.81\right)\left(15.3\right)^2}{2}+\left(1950\right)\left(9.81\right)\left(3\right)+\frac{\left(7.78\right)\left(9.81\right)\left(15.3\right)^2}{2}+\frac{\left(7.42\right)\left(9.81\right)\left(15.3\right)^2}{6}-2.55\left(1.225\right)v^2C_L\left(\frac{15.3}{2}\right)\left(15.3\right)-\frac{2}{17}\left(1.225\right)v^2C_L\left(\frac{2}{3}\right)\left({15.3}^2\right)\left(\frac{1}{2}\right) $$
+
+By applying $\sum{F_y=0} $, (upward positive)
+
+We get
+$$0=R-\left(135\right)\left(9.81\right)\left(15.3\right)-\left(1950\right)\left(9.81\right)-\left(7.81\right)\left(9.81\right)(15.3)-\frac{1}{2}\left(7.42\right)\left(15.3\right)\left(9.81\right)+2.55\left(1.225\right)v^2C_L\left(15.3\right)-\frac{2}{17}\left(1.225\right)v^2C_L\left({15.3}^2\right)\left(\frac{1}{2}\right)$$
+
+In both the equations above, note that there are two unknowns, the speed of the aircraft(v) and the lift coefficient(C_L). Therefore, when we code in MATLAB, looping is required to evaluate the different reaction forces(R) and moments(M) at the fixed support at different speed and angle of attack and stores the values in the form of 2D array.
+
+After that, Macaulay equation can be constructed according to the free body diagram as shown in [[Figure 6](#figure6)] below :
+
+<a name="figure6"></a> ![Figure6](Figure6.png)
+
 
 
 --- 
