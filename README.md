@@ -83,10 +83,9 @@ $\sum M_{X-X}=EI\frac{dy^2}{dx^2}$, (clockwise positive)
 We get
 $$EI\frac{dy^2}{dx^2}=-\left(\frac{1}{2}\right)\left(15.2\right)\left(9.81\right)x^2-\left(\frac{1}{2}\right)\left(135\right)\left(9.81\right)x^2 -\left(1950\right)\left(9.81\right)(x-3)+Mx^0+Rx+\frac{\left(7.42\right)\left(9.81\right)}{\left(6\right)\left(15.3\right)}x^3 +(1/2)(2.55)(1.225)\ v^2\ C_L x^2-(2/17)(1.225)\ v^2\ C_L\ \ (x^3)/6 $$
 
-
+###
 Integrate the equation above
 
-We get
 $$ EI\frac{dy}{dx}=-\left(\frac{1}{6}\right)\left(15.2\right)\left(9.81\right)x^3-\left(\frac{1}{6}\right)\left(135\right)\left(9.81\right)x^3 -\left(\frac{1}{2}\right)\left(1950\right)\left(9.81\right)(x-3)^2+Mx^1+\frac{R}{2}x^2+\frac{\left(7.42\right)\left(9.81\right)}{\left(24\right)\left(15.3\right)}x^4 +\left(\frac{1}{6}\right)\left(2.55\right)\left(1.225\right)v^2C_L x^3-\left(\frac{2}{17}\right)\left(1.225\right)v^2C_L\frac{x^4}{24}+C $$
 
 
@@ -135,7 +134,7 @@ To calculate the cross-sectional area, we apply the formula of area moment of in
 
 $$ \frac{1}{12}t^4=I_{single} $$
 
-The cross-sectional area, $A = t^2 m2$
+The cross-sectional area, $A = t^2 m^2$
 
 To determine the location of  position and location of maximum transverse stress and maximum bending stress, the equations of both stresses must be studied.
 
