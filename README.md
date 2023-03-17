@@ -104,7 +104,7 @@ $$ C=0 $$
 From deflection equation, when x=0, deflection at fixed support is 0,
 
 $$ 0=0+D $$
-$$ \bigmD=0 $$
+$$ D=0 $$
 
 
 Therefore, our final deflection equation is as follow :
@@ -153,6 +153,20 @@ From the two equations above, we can conclude that the first moment of area, sec
 Since the values of force and bending moment is stored in 3D arrays, we can simply quote the location of the maximum values by MATLAB command of “ind2sub”. It will return the position of the maximum value in 3 single variables for row, column and page.
 
 To plot graphs in MATLAB, commands like “plot(x,y)” and “surfc(x,y,z)” are used. The size of the array in x,y and z axis must be equal to each other. Commands like “meshgrid”, “xlabel”, “ylabel”, “zlabel”, “title” are also used to provide a better visual representation of the graphs.
+
+## Results
+The following is the result from MATLAB program attached.
+- For question a)
+    - The cross section of the beam is 0.609 m^2.
+
+- For question b)
+    - The maximum transverse stress occurs at point x=0.00,with the conditions of speed 750 km per h and angle of attack 15 degree.
+
+- For question c)
+    - The maximum bending stress occurs at point x=0.00,with the conditions of speed 750 km per h and angle of attack 15 degree.
+
+- For question d), e), f), g), h), i),
+    ![Results](Results.png)
 
 
 --- 
