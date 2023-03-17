@@ -54,6 +54,7 @@ Given :
 - Weight of turbine = 1950kg at x=3
 - Weight of wing = 135kg/m throughout 
 - Lift force = $ -2/17 \rho xv^2 C_L+2.55\rho v^2 C_L $ N/m throughout
+
 Where 
 - $\rho$= density of air 1.225 kg/m3 
 - $v$ = speed (0-750 km/h)
