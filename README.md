@@ -44,6 +44,22 @@ $x$ is the distance from body
 
 --- 
 ## Solution proposed
+Before constructing any codes in MATLAB, a correct Macaulay equation is very important for any further calculations. Therefore, we need to first draw a free body diagram of the scenario as shown in [[Figure 5](#figure5)].
+
+<a name="figure5"></a> ![Figure5](Figure5.png)
+
+Given :
+
+Weight of fuel = 15.2kg/m at x=0 , 7.78kg/m at x=15.3
+Weight of turbine = 1950kg at x=3
+Weight of wing = 135kg/m throughout 
+Lift force = $ -2/17 \rho xv^2 C_L+2.55\rho v^2 C_L $ N/m throughout
+Where 
+$\rho$= density of air 1.225 kg/m3 
+$v$ = speed (0-750 km/h)
+$C_L$ = lift coefficient depends on angle of attack ($C_L=0.09\rho+0.4$)
+$\alpha$ = angle of attack (0-15 deg.)
+$x$ = distance from body
 
 
 
