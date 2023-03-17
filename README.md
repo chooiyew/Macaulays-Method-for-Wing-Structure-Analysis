@@ -76,9 +76,13 @@ In both the equations above, note that there are two unknowns, the speed of the 
 
 After that, Macaulay equation can be constructed according to the free body diagram as shown in [[Figure 6](#figure6)] below :
 
+<a name="figure6"></a> ![Figure6](Figure6.png)
 
+$\sum M_{X-X}=EI\frac{dy^2}{dx^2}$, (clockwise positive)
 
-
+$$ EI\frac{dy^2}{dx^2}=-\left(\frac{1}{2}\right)\left(15.2\right)\left(9.81\right)<x>^2-\left(\frac{1}{2}\right)\left(135\right)\left(9.81\right)<x>^2 $$
+$$ $$
+$$ $$
 
 --- 
 ## Table of content
